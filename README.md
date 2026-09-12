@@ -1,11 +1,13 @@
 # One-Image Multi-Shot Director
 
-Seedance 2.5용 독립 영상 연출 스킬입니다.
+Seedance 2.5용 독립 영상 연출 스킬입니다. 기준 이미지의 정체성은 유지하면서, 콘셉트에 따라 무드필름 또는 퍼포먼스 중심 영상 프롬프트를 설계합니다.
 
 한 장의 기준 이미지와 원하는 영상 길이를 입력하면, 선택한 길이에 맞춘 **통합 프롬프트 1개**를 만듭니다.
 
 - 15초·20초·30초 또는 직접 입력한 길이 지원
 - 하나의 생성 안에 4단 내부 연출 구조 설계
+- `MOOD` / `PERFORMANCE` / `HYBRID` 연출 모드 자동 선택
+- 공연·댄스·뮤직비디오에서 즉시 훅, 동작 상승, 시각적 피날레 설계
 - 한국어 비주얼 앵커와 타임라인
 - Seedance 2.5에 바로 붙여 넣는 영문 마스터 프롬프트 1개
 - STORM·Notion과 독립적으로 사용
@@ -13,6 +15,10 @@ Seedance 2.5용 독립 영상 연출 스킬입니다.
 ## 기본 사용 예시
 
 > 이 인물이 달빛 아래 수호자로 각성하는 영상으로 만들어줘. 30초.
+
+퍼포먼스 영상은 다음처럼 요청합니다.
+
+> 이 아이돌이 콘서트 무대에서 마이크를 휘두르며 피날레 포즈를 만드는 영상으로 만들어줘. 15초.
 
 길이를 정하지 않았다면 다음 중 하나를 선택합니다.
 
@@ -26,6 +32,6 @@ Seedance 2.5용 독립 영상 연출 스킬입니다.
 ## 설치
 
 ```bash
-mkdir -p ~/.hermes/skills/one-image-multishot-director
-cp SKILL.md ~/.hermes/skills/one-image-multishot-director/SKILL.md
+mkdir -p ~/.codex/skills/one-image-multishot-director
+cp SKILL.md ~/.codex/skills/one-image-multishot-director/SKILL.md
 ```
